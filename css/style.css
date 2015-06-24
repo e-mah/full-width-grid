@@ -1,0 +1,133 @@
+/****************/
+/*! Typography  */
+/****************/
+
+body {
+  color: #e4e4e4;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/********************/
+/*! General Styles  */
+/********************/
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/************/
+/*! Layout  */
+/************/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+/* grid columns */
+@media only screen and (min-width: 37.5em) {
+
+  /* one */
+  .med-full {
+    padding: 0 2%;
+  }
+
+  /* two */
+  .med-one-half {
+    float: left;
+    padding: 0 2%;
+    width: 50%;
+  }
+
+  /* three */
+  .med-one-third {
+    float: left;
+    padding: 0 2%;
+    width: 33.3333%;
+  }
+
+  .med-two-thirds {
+    float: left;
+    padding: 0 2%;
+    width: 66.6667%;
+  }
+
+  /* four */
+  .med-one-fourth {
+    float: left;
+    padding: 0 2%;
+    width: 25%;
+  }
+}
+
+/************/
+/*! Blocks  */
+/************/
+
+/* Header */
+.site-header {
+  background-color: #9ba3a4;
+  padding: 1.125em 0;
+}
+
+/* Color Bands */
+.section {
+  padding: 1.125em;
+}
+
+.section-one {
+  background-color: #91999a;
+}
+
+.section-two {
+  background-color: #63716B;
+}
+
+.section-three {
+  background-color: #7E7E59;
+}
+
+.section-four {
+  background-color: #8C8045;
+}
+
+.section-five {
+  background-color: #474A54;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3c3f47;
+  padding: 1.125em 0;
+}
+
+/* Micro clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
